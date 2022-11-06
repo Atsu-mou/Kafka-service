@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    consumer:
+      session-timeout: 600000
+      group-id: group-1
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+request:
+  save: "http://127.0.0.1:1245/savePet"
